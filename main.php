@@ -1,2 +1,2 @@
 <?php
-    echo 'Hello git good ok for google!';
+    echo 'Hello git good ok for google 2!';
