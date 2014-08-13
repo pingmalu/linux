@@ -14,7 +14,3 @@ handlers:
 
 - url: /(.+)
   script: public/\1
-
-- url: /img/(.+)
-  static_files: public/img/\1
-  upload: public/img/(.*)
