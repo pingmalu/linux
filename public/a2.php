@@ -1,10 +1,10 @@
 <?php
-$fp = fsockopen("http://www.google.com", 80, $errno, $errstr, 30);
+$fp = fsockopen("www.malu.me", 80, $errno, $errstr, 30);
 if (!$fp) {
     echo "$errstr ($errno)<br />\n";
 } else {
     $out = "GET / HTTP/1.1\r\n";
-    $out .= "Host: www.google.com\r\n";
+    $out .= "Host: malu.me\r\n";
     $out .= "Connection: Close\r\n\r\n";
     fwrite($fp, $out);
     while (!feof($fp)) {
