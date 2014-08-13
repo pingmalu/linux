@@ -1,4 +1,4 @@
-application: feisty-well-666 
+application: github-malu-me
 version: 1
 runtime: php
 api_version: 1
@@ -12,11 +12,5 @@ handlers:
 - url: /
   script: main.php
 
-- url: /dns/.*
-  script: dns/index.php
-
 - url: /test/.*
   script: test/a.php
-
-- url: /pop3/.*
-  script: pop3/index.php
