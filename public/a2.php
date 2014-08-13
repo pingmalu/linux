@@ -1,5 +1,5 @@
 <?php
-$fp = fsockopen("www.google.com", 80, $errno, $errstr, 30);
+$fp = fsockopen("http://www.google.com", 80, $errno, $errstr, 30);
 if (!$fp) {
     echo "$errstr ($errno)<br />\n";
 } else {
