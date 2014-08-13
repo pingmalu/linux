@@ -10,7 +10,7 @@ handlers:
   upload: favicon\.ico
 
 - url: /
-  script: main.php
+  script: public/index.php
 
-- url: /test/.*
-  script: test/a.php
+- url: /(.+)
+  script: public/\1
