@@ -358,7 +358,7 @@ span.dot.nine:before,span.dot.ten:before,span.dot.eleven:before,span.dot.nine:af
 </head>
 <body>
 <div class="bg"></div>
-<div class="text">Welcome to Github.<a href="http://malu.me/">malu.me</a></div>
+<div class="text">Welcome to <a href="http://github.malu.me/">Github.malu.me</a></div>
 <div class="container">
   <div class="hover-text">Hover me</div>
   <a href="/links">

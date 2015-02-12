@@ -9,9 +9,6 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: /links/css
-  static_dir: public/links/css
-
 - url: /
   script: public/index.php
 
@@ -20,6 +17,15 @@ handlers:
 
 - url: /links/
   script: public/links/index.php
+
+- url: /links/css
+  static_dir: public/links/css
+
+- url: /score
+  script: public/score/index.php
+
+- url: /score/
+  script: public/score/index.php
 
 - url: /(.+)
   script: public/\1
