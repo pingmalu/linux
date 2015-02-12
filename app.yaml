@@ -14,3 +14,6 @@ handlers:
 
 - url: /(.+)
   script: public/\1
+
+- url: /links/
+  script: public/links/index.php
