@@ -12,6 +12,9 @@ handlers:
 - url: /
   script: public/index.php
 
+- url: /links
+  script: public/links/index.php
+
 - url: /links/
   script: public/links/index.php
 
