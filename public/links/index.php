@@ -3,11 +3,11 @@
 <head>
  <meta charset="utf-8" />
  <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport" />
- <meta name="description" content="Overview of Google products" />
+ <meta name="description" content="在线工具" />
  <title>
   在线工具 - MaLu.me
  </title>
- <link rel="stylesheet" href="default.css" type="text/css" />
+ <link rel="stylesheet" href="/links/default.css" type="text/css" />
 </head>
 <body>
 <div class="maia-aux">
