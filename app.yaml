@@ -15,5 +15,5 @@ handlers:
 - url: /(.+)
   script: public/\1
 
-- url: /links/
+- url: /links/.*
   script: public/links/index.php
