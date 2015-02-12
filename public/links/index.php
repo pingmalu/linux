@@ -7,7 +7,7 @@
  <title>
   在线工具 - MaLu.me
  </title>
- <link rel="stylesheet" href="/links/default.css" type="text/css" />
+ <link rel="stylesheet" href="/links/css/default.css" type="text/css" />
 </head>
 <body>
 <div class="maia-aux">

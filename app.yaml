@@ -9,8 +9,8 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: /links
-  static_dir: public/links
+- url: /links/css
+  static_dir: public/links/css
 
 - url: /
   script: public/index.php
