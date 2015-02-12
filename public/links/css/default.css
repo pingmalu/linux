@@ -1,75 +1,17 @@
-html {
-background: #fff;
-color: #444;
-padding: 0 15px;
-}
-html, h4, h5, h6 {
-font-size: 13px;
-}
-html {
-line-height: 1.54;
-}
-html, input, textarea {
-font-family: arial,sans-serif;
-}
-body {
-margin: 0;
-}
-.maia-aux {
-margin: auto;
-max-width: 978px;
-padding-top: 66px;
-padding-bottom: 20px;
-}
-
-.products-section h2 {
-border-bottom: 1px solid #ebebeb;
-clear: left;
-font-size: 1.077em;
-margin-bottom: 0;
-padding-bottom: 0;
-}
-.products-section ul {
-display: inline-block;
-list-style: none;
-margin: 0 0 13px;
-padding: 0;
-width: 100%;
-}
-.products-section li {
-display: inline;
-float: left;
-line-height: 1.4;
-margin: 11px 0 .2em;
-position: relative;
-width: 50%;
-}
-.products-section li.break {
-clear: left;
-}
-.products-section li a {
-font-weight: bold;
-line-height: 22px;
-}
-a:visited {
-color: #7759ae;
-}
-a {
-color: #245dc1;
-text-decoration: none;
-}
-.products-section li p {
-color: #444;
-margin: 0 2em 0 3.6em;
-}
-p, pre, table, form {
-margin: 10px 0;
-}
-.products-section img {
-float: left;
-padding: 0 1em 0 0;
-margin: 5px 0 0;
-}
-fieldset, iframe, img {
-border: 0;
-}
+html{background:#fff;color:#444;padding:0 15px;}
+html,h4,h5,h6{font-size:13px;}
+html{line-height:1.54;}
+html,input,textarea{font-family:arial,sans-serif;}
+body{margin:0;}
+.maia-aux{margin:auto;max-width:978px;padding-top:66px;padding-bottom:20px;}
+.products-section h2{border-bottom:1px solid #ebebeb;clear:left;font-size:1.077em;margin-bottom:0;padding-bottom:0;}
+.products-section ul{display:inline-block;list-style:none;margin:0 0 13px;padding:0;width:100%;}
+.products-section li{display:inline;float:left;line-height:1.4;margin:11px 0 .2em;position:relative;width:50%;}
+.products-section li.break{clear:left;}
+.products-section li a{font-weight:bold;line-height:22px;}
+a:visited{color:#7759ae;}
+a{color:#245dc1;text-decoration:none;}
+.products-section li p{color:#444;margin:0 2em 0 3.6em;}
+p,pre,table,form{margin:10px 0;}
+.products-section img{float:left;padding:0 1em 0 0;margin:5px 0 0;}
+fieldset,iframe,img{border:0;}
