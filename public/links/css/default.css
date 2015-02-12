@@ -18,6 +18,8 @@ margin: 0;
 .maia-aux {
 margin: auto;
 max-width: 978px;
+padding-top: 66px;
+padding-bottom: 20px;
 }
 
 .products-section h2 {
