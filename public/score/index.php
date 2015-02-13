@@ -361,7 +361,7 @@ span.dot.nine:before,span.dot.ten:before,span.dot.eleven:before,span.dot.nine:af
 <div class="text">Welcome to <a href="http://github.malu.me/">Github.malu.me</a></div>
 <div class="container">
   <div class="hover-text">Hover me</div>
-  <a href="/links">
+  <a href="http://malu.me/links/">
 	<div id="pyramid-small">	
 		<div class="pyram-small one s1"></div>
 		<div class="pyram-small two s2"></div>
