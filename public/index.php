@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><meta http-equiv="Refresh" content="3;URL=http://github.malu.me/score" />
+<!DOCTYPE html><html><head><meta charset='UTF-8'><meta http-equiv="Refresh" content="3;URL=/score" />
    <style>
     .quiver{position:fixed;bottom:50%;left:50%;z-index:899;margin-bottom:-50px;margin-left:-50px;width:100px;}
     .arrows{-moz-animation:equalizor cubic-bezier(0.77,0,0.175,1) 0.5s alternate-reverse infinite;-webkit-animation:equalizor cubic-bezier(0.77,0,0.175,1) 0.5s alternate-reverse infinite;animation:equalizor cubic-bezier(0.77,0,0.175,1) 0.5s alternate-reverse infinite;vertical-align:baseline;display:inline-block;width:0;height:0;border-style:solid;border-width:0 10px 1px 10px;border-color:rgba(255,255,255,0) rgba(255,255,255,0) #0b486b rgba(255,255,255,0);}
