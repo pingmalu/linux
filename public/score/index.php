@@ -394,4 +394,4 @@ span.dot.nine:before,span.dot.ten:before,span.dot.eleven:before,span.dot.nine:af
 		<span class="dot small twelve"></span>
 	</div>		
 </div>
-</html>
+</body>
