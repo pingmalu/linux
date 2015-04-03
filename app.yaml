@@ -18,8 +18,8 @@ handlers:
 - url: /links/
   script: public/links/index.php
 
-- url: /links/css
-  static_dir: public/links/css
+- url: /links/(.+)
+  static_dir: public/links/\1
 
 - url: /score
   script: public/score/index.php
