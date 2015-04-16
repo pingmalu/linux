@@ -11,7 +11,7 @@ $px_html=<<<EOF
 </head>
 <body>
 <div class="header"><div class="container">
-<script type="text/javascript" src="http://cdn1.malu.me/share/js/xm_px.js"></script>
+<script type="text/javascript" src="http://cdn1.malu.me/share/js/xm_px_v2.js"></script>
 <div class="error">{$msg}</div>
 </div></div>
 </body>
@@ -23,17 +23,31 @@ print $px_html;
 // print($_SERVER['REQUEST_METHOD'].' '.$_SERVER['REQUEST_URI'].''.$_SERVER['CONTENT_TYPE']);
 // echo substr($_SERVER['REQUEST_URI'],1);
 // echo 'http://'.substr($_SERVER['REQUEST_URI'],1);
-if(filter_var(substr($_SERVER['REQUEST_URI'],1), FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED)){
+/*if(filter_var(substr($_SERVER['REQUEST_URI'],1), FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED)){
 	$q_url = substr($_SERVER['REQUEST_URI'],1);
 }elseif(filter_var('http://'.substr($_SERVER['REQUEST_URI'],1), FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED)){
 	$q_url = 'http://'.substr($_SERVER['REQUEST_URI'],1);
 }elseif(filter_var('http://'.substr($_SERVER['REQUEST_URI'],1).'/', FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED)){
 	$q_url = 'http://'.substr($_SERVER['REQUEST_URI'],1).'/';
 }elseif(substr($_SERVER['REQUEST_URI'],1) != ''){
-	$msg = "URL地址出错!";
+	$msg = "URL地址出错!".$_SERVER['REQUEST_URI'];
+	px_show($msg);
+	exit();
+}*/
+$url = $_SERVER['QUERY_STRING'];
+
+if(filter_var($url, FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED)){
+	$q_url = $url;
+}elseif(filter_var('http://'.$url, FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED)){
+	$q_url = 'http://'.$url;
+}elseif(filter_var('http://'.$url.'/', FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED)){
+	$q_url = 'http://'.$url.'/';
+}elseif($url != ''){
+	$msg = "URL地址出错!".$url;
 	px_show($msg);
 	exit();
 }
+
 
 if (!isset($q_url)) {
 	px_show($msg);
@@ -43,7 +57,8 @@ if (!isset($q_url)) {
 $host_arr = parse_url($q_url);
 // exit();
 $mirror = $host_arr['host'];		// Change this value to the site you want to mirror.
-
+// echo $mirror;
+// exit();
 $req = $_SERVER['REQUEST_METHOD'] . ' ' .  $host_arr['path'].$host_arr['query']. " HTTP/1.0\r\n";
 $length = 0;
 foreach ($_SERVER as $k => $v) {
