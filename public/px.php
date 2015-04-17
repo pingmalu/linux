@@ -70,7 +70,7 @@ if (!isset($q_url)) {
 $host_arr = parse_url($q_url);
 // exit();
 $mirror = $host_arr['host'];		// Change this value to the site you want to mirror.
-$homepage = file_get_contents($mirror);
+$homepage = file_get_contents('http://'.$mirror);
 echo $homepage;
 // echo $mirror;
 exit();
