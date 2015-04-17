@@ -1,8 +1,15 @@
 <?php
+
+if(!function_exists('file_get_contents')) {
+	echo '这个主机目前不支持 file_get_contents 模块';
+}
 if(!function_exists('curl_init')) {
 	echo '这个主机目前不支持 curl_init 模块';
-	exit();
 }
+if(!function_exists('allow_url_fopen')) {
+	echo '这个主机目前不支持 allow_url_fopen 模块';
+}
+
 ini_set('display_errors', 0);//设置关闭错误提示
 function px_show($msg){
 $px_html=<<<EOF
