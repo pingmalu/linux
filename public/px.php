@@ -1,6 +1,6 @@
 <?php
 
-if(!function_exists('file_get_contents')) {
+/*if(!function_exists('file_get_contents')) {
 	echo '这个主机目前不支持 file_get_contents 模块';
 }
 if(!function_exists('curl_init')) {
@@ -8,7 +8,7 @@ if(!function_exists('curl_init')) {
 }
 if(!function_exists('allow_url_fopen')) {
 	echo '这个主机目前不支持 allow_url_fopen 模块';
-}
+}*/
 
 ini_set('display_errors', 0);//设置关闭错误提示
 function px_show($msg){
@@ -70,8 +70,10 @@ if (!isset($q_url)) {
 $host_arr = parse_url($q_url);
 // exit();
 $mirror = $host_arr['host'];		// Change this value to the site you want to mirror.
+$homepage = file_get_contents($mirror);
+echo $homepage;
 // echo $mirror;
-// exit();
+exit();
 $req = $_SERVER['REQUEST_METHOD'] . ' ' .  $host_arr['path'].$host_arr['query']. " HTTP/1.0\r\n";
 $length = 0;
 foreach ($_SERVER as $k => $v) {
