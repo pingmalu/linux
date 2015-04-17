@@ -47,7 +47,7 @@ print $px_html;
 }*/
 $url = $_SERVER['QUERY_STRING'];
 
-if(filter_var($url, FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED)){
+/*if(filter_var($url, FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED)){
 	$q_url = $url;
 }elseif(filter_var('http://'.$url, FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED)){
 	$q_url = 'http://'.$url;
@@ -58,19 +58,20 @@ if(filter_var($url, FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED)){
 	px_show($msg);
 	exit();
 }
+*/
 
-
-if (!isset($q_url)) {
+if (!isset($url) || $url == '') {
 	px_show($msg);
 	exit();
 }
 
+// echo $url;
 
-
-$host_arr = parse_url($q_url);
+// $host_arr = parse_url($q_url);
 // exit();
-$mirror = $host_arr['host'];		// Change this value to the site you want to mirror.
-$homepage = file_get_contents('http://'.$mirror);
+// $mirror = $host_arr['host'];		// Change this value to the site you want to mirror.
+// str_replace("http://", "", $url);
+$homepage = file_get_contents('http://'.str_replace("http://", "", $url));
 echo $homepage;
 // echo $mirror;
 exit();
