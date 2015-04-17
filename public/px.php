@@ -1,4 +1,8 @@
 <?php
+if(!function_exists('curl_init')) {
+	echo '这个主机目前不支持 curl_init 模块';
+	exit();
+}
 ini_set('display_errors', 0);//设置关闭错误提示
 function px_show($msg){
 $px_html=<<<EOF
@@ -6,7 +10,7 @@ $px_html=<<<EOF
 <head>
 <link rel="shortcut icon" href="http://malu.me/favicon.ico"> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>小马中转站 by malu.me</title>
+<title>小马中转站 V2 by malu.me</title>
 <link href="http://cdn1.malu.me/share/css/xm_px.css" rel="stylesheet">
 </head>
 <body>
@@ -54,6 +58,8 @@ if (!isset($q_url)) {
 	exit();
 }
 
+
+
 $host_arr = parse_url($q_url);
 // exit();
 $mirror = $host_arr['host'];		// Change this value to the site you want to mirror.
@@ -76,6 +82,8 @@ foreach ($_SERVER as $k => $v) {
 		$req .= $k . ": " . $v . "\r\n";
 	}
 }
+
+
 $body = @file_get_contents('php://input');
 $req .= "Content-Type: " . $_SERVER['CONTENT_TYPE'] . "\r\n";
 $req .= "Content-Length: " . strlen($body) . "\r\n";
