@@ -27,5 +27,8 @@ handlers:
 - url: /score/
   script: public/score/index.php
 
+- url: /dns/(.+)
+  static_dir: public/dns/\1
+
 - url: /(.+)
   script: public/\1
