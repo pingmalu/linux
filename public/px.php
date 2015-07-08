@@ -66,7 +66,6 @@ if (!isset($url) || $url == '') {
 }
 
 // echo $url;
-
 // $host_arr = parse_url($q_url);
 // exit();
 // $mirror = $host_arr['host'];		// Change this value to the site you want to mirror.
