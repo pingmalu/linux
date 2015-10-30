@@ -1,6 +1,6 @@
 <?php
 
-
+echo 'is ok test1';
 exit;
 ?>
 
