@@ -1,3 +1,10 @@
+<?php
+
+
+exit;
+?>
+
+
 <!DOCTYPE html><html><head><meta charset='UTF-8'><meta http-equiv="Refresh" content="3;URL=/score" />
    <style>
     .quiver{position:fixed;bottom:50%;left:50%;z-index:899;margin-bottom:-50px;margin-left:-50px;width:100px;}
